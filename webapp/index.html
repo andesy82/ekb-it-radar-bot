@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EKB IT Radar // Афиша хакатонов</title>
+    <style>
+        :root {
+            --bg: #0b0f19;
+            --card: #131a2a;
+            --border: #232d45;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --accent: #38bdf8;
+            --tag-bg: rgba(56, 189, 248, 0.12);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 24px 16px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+        h1 { font-size: 1.4rem; color: #fff; }
+        .badge { background: var(--tag-bg); color: var(--accent); padding: 3px 10px; border-radius: 12px; font-size: 0.8rem; border: 1px solid rgba(56,189,248,0.3); }
+        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+        .filter-btn { background: var(--card); border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 20px; cursor: pointer; font-size: 0.85rem; transition: 0.2s; }
+        .filter-btn.active, .filter-btn:hover { background: var(--accent); color: #0b0f19; font-weight: 600; border-color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+        .event-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
+        .event-date { font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+        .event-title { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+        .event-loc { font-size: 0.85rem; color: var(--muted); margin-bottom: 12px; }
+        .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+        .tag { background: var(--tag-bg); color: var(--accent); font-size: 0.75rem; padding: 2px 8px; border-radius: 6px; }
+        .btn { width: 100%; padding: 9px; border: none; border-radius: 8px; background: var(--accent); color: #0b0f19; font-weight: 600; cursor: pointer; }
+        .btn.subscribed { background: #10b981; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>📡 EKB IT Radar <span class="badge">Екатеринбург</span></h1>
+                <p style="color: var(--muted); font-size: 0.9rem; margin-top: 4px;">Агрегатор хакатонов, митапов и стажировок для студентов ИРИТ-РТФ</p>
+            </div>
+        </header>
+
+        <div class="filters" id="filterBar">
+            <button class="filter-btn active" data-tag="ALL">Все события</button>
+            <button class="filter-btn" data-tag="Python">Python</button>
+            <button class="filter-btn" data-tag="C#">C# / .NET</button>
+            <button class="filter-btn" data-tag="Web">Web / JS</button>
+            <button class="filter-btn" data-tag="Hackathon">Хакатоны</button>
+        </div>
+
+        <div class="grid" id="eventsGrid"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
