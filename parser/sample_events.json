@@ -1,0 +1,66 @@
+
+[
+  {
+    "id": "enigma-hack-2027",
+    "title": "ENIGMA HACK",
+    "date": "2027-02-20",
+    "location": "Екатеринбург, УрФУ",
+    "tags": ["hackathon", "python", "web", "teamwork"],
+    "description": "Командный хакатон для студентов. Разработка IT-проектов и решение практических задач.",
+    "url": "https://example.com/enigma-hack"
+  },
+  {
+    "id": "python-meetup-2027",
+    "title": "Python Meetup Екатеринбург",
+    "date": "2027-03-10",
+    "location": "Екатеринбург, Ельцин Центр",
+    "tags": ["python", "backend"],
+    "description": "Встреча Python-разработчиков с докладами, обсуждением библиотек и практических кейсов.",
+    "url": "https://example.com/python-meetup"
+  },
+  {
+    "id": "dotnet-meetup-2027",
+    "title": ".NET Community Meetup",
+    "date": "2027-03-18",
+    "location": "Екатеринбург, Ельцин Центр",
+    "tags": ["csharp", "dotnet", "backend"],
+    "description": "Митап для разработчиков на C# и .NET. Доклады и обмен опытом.",
+    "url": "https://example.com/dotnet-meetup"
+  },
+  {
+    "id": "ml-workshop-2027",
+    "title": "Machine Learning Workshop",
+    "date": "2027-03-25",
+    "location": "Екатеринбург, УрФУ",
+    "tags": ["ml", "python", "ai"],
+    "description": "Практический мастер-класс по машинному обучению и анализу данных.",
+    "url": "https://example.com/ml-workshop"
+  },
+  {
+    "id": "kontur-internship-2027",
+    "title": "Стажировка в Контуре",
+    "date": "2027-04-01",
+    "location": "Екатеринбург, Контур",
+    "tags": ["internship", "python", "web"],
+    "description": "Образовательная программа и стажировка для начинающих IT-специалистов.",
+    "url": "https://example.com/kontur-internship"
+  },
+  {
+    "id": "tbank-internship-2027",
+    "title": "IT Internship от Т-Банка",
+    "date": "2027-04-12",
+    "location": "Екатеринбург, онлайн",
+    "tags": ["internship", "python", "csharp"],
+    "description": "Знакомство с инженерными командами и возможностями развития в IT.",
+    "url": "https://example.com/tbank-internship"
+  },
+  {
+    "id": "sber-ai-2027",
+    "title": "AI и Data Science от Сбера",
+    "date": "2027-04-20",
+    "location": "Екатеринбург, онлайн",
+    "tags": ["ml", "python", "data"],
+    "description": "Образовательное мероприятие о машинном обучении и работе с данными.",
+    "url": "https://example.com/sber-ai"
+  }
+]
